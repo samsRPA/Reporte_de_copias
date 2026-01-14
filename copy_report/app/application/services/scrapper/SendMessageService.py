@@ -58,9 +58,12 @@ class SendMessageService(ISendMessageService):
             if data.get("success"):
                 for result in data.get("results", []):
                     self.logger.info(f"📨 Enviado a {result['recipient']} → OK: {result['ok']}")
+                    
+                return True
 
         except requests.exceptions.RequestException as e:
             self.logger.error(f"❌ Error al consumir el endpoint: {e}"  )
+            return False
 
 
 

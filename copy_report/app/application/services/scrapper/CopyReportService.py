@@ -1,4 +1,5 @@
 
+import os
 from app.domain.interfaces.IGetDataService import IGetDataService
 import logging
 from app.application.dto.HoyPathsDto import HoyPathsDto
@@ -84,8 +85,16 @@ class CopyReportService(ICopyReportService):
             )
             
             self.send_message_service.send_message(message)
-          
 
+
+            try:
+                if os.path.exists(output_path):
+                    os.remove(output_path)
+                    self.logger.info(f"🗑️ Archivo local eliminado: {output_path}")
+            except Exception as e:
+                self.logger.error(f"❌ Error eliminando el archivo local: {e}")
+          
+            
         except Exception as e:
             self.logger.error(f"❌ Error : {e}")
             raise e
