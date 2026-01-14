@@ -1,0 +1,14 @@
+2026-01-14 12:58:42,373 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-14 12:58:42,959 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 07/01/2026 hasta 14/01/2026 (día actual: Wednesday)
+2026-01-14 12:59:43,150 - INFO - [CopyReportService] ✅ Se extrayeron 18197 informes de copias
+2026-01-14 12:59:43,836 - INFO - [ProcessDataService] 📊 XLSX generado correctamente → /app/output/reports/informe_copias_14-01-2026_prueba.xlsx
+2026-01-14 12:59:43,837 - INFO - [MicrosoftAzureService] 🚀 Conectando con Microsoft Azure...
+2026-01-14 12:59:44,693 - INFO - [MicrosoftAzureService] 🌐 Conectado con Microsoft Azure
+2026-01-14 12:59:44,693 - INFO - [MicrosoftAzureService] 🌐 Extrayendo información del Drive de Microsoft...
+2026-01-14 12:59:45,192 - INFO - [MicrosoftAzureService] ✅ Drive obtenido correctamente: b!hVY7ts97W0W-LWNlJ5gpg1cdet7DktFJt7p6R1UzGGr91lA5y9VBR6V1Qdo2t_x4
+2026-01-14 12:59:45,194 - INFO - [MicrosoftAzureService] ⬆️ Subiendo archivo Excel a Microsoft Drive...
+2026-01-14 13:02:48,033 - INFO - [MicrosoftAzureService] ✅ Archivo subido correctamente: informe_copias_14-01-2026_prueba.xlsx (ID: 0175FYXVGXD4BCF5YOVJDIPVRXWVIGXRV2)
+2026-01-14 13:02:48,033 - INFO - [MicrosoftAzureService] 🔗 Link del archivo: https://litigando-my.sharepoint.com/personal/lilian_trivino_litigando_com/_layouts/15/Doc.aspx?sourcedoc=%7B22021FD7-0EF7-46AA-87D6-37B5506BC6BA%7D&file=informe_copias_14-01-2026_prueba.xlsx&action=default&mobileredirect=true
+2026-01-14 12:59:54,822 - INFO - [SendMessageService] Status code:  200
+2026-01-14 12:59:54,823 - INFO - [SendMessageService] 📨 Enviado a 120363204461146888@g.us → OK: True
+2026-01-14 12:59:54,920 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.

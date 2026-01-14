@@ -1,0 +1,84 @@
+services:
+ 
+  
+  ssh_tunnel_copy_rep:
+    image: alpine:latest
+    container_name: ssh_tunnel_copy_rep
+    volumes:
+      - ./stack/ssh_tunnel/bd-tunnel.sh:/bd-tunnel.sh:ro
+      - ./stack:/keys
+    command: sh /bd-tunnel.sh
+    env_file:
+      - ./stack/ssh_tunnel/.env
+    networks:
+      - rabbitmq_net
+    restart: always
+    healthcheck:
+      test: ["CMD", "sh", "-c", "netstat -tn | grep -q ESTABLISHED"]
+      interval: 25s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          memory: 1000M
+        reservations:
+          memory: 256M
+  
+
+  copy_report:
+    build:
+      context: ./copy_report
+      dockerfile: dockerfile
+    #container_name: scrapper_tyba
+    depends_on:
+      ssh_tunnel_copy_rep:
+        condition: service_healthy
+    
+    networks:
+      - rabbitmq_net
+    volumes:
+      - ./output:/app/output
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2000m
+  
+  # upload_logs:
+  #   build:
+  #     context: ./upload_logs
+  #     dockerfile: dockerfile
+  #   container_name: upload_logs
+
+
+  #   networks:
+  #     - rabbitmq_net
+  #   volumes:
+  #     - ./output:/app/output
+  #   logging:
+  #     driver: "json-file"
+  #     options:
+  #       max-size: "20m"
+  #       max-file: "5"
+  #   deploy:
+  #     #replicas: 25
+  #     resources:
+  #       limits:
+  #         memory: 2000m
+  
+
+networks:
+  rabbitmq_net:
+    driver: bridge
+    

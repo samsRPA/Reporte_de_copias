@@ -1,0 +1,97 @@
+2026-01-14 12:12:55,372 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-14 12:12:56,775 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 07/01/2026 hasta 14/01/2026 (día actual: Wednesday)
+2026-01-14 12:14:10,715 - INFO - [CopyReportService] ✅ Se extrayeron 17790 informes de copias
+2026-01-14 12:14:11,428 - INFO - [ProcessDataService] 📊 XLSX generado correctamente → /app/output/reports/informe_copias_14-01-2026.xlsx
+2026-01-14 12:14:11,428 - INFO - [MicrosoftAzureService] 🚀 Conectando con Microsoft Azure...
+2026-01-14 12:14:12,576 - INFO - [MicrosoftAzureService] 🌐 Conectado con Microsoft Azure
+2026-01-14 12:14:12,577 - INFO - [MicrosoftAzureService] 🌐 Extrayendo información del Drive de Microsoft...
+2026-01-14 12:14:15,761 - INFO - [MicrosoftAzureService] ✅ Drive obtenido correctamente: b!BeBJQXeSykaNVrjviM8dPcREbuoEhzZIgIN8R7Zd4xgsifrnHy1jQ7r5ODIOXBQk
+2026-01-14 12:14:15,762 - INFO - [MicrosoftAzureService] ⬆️ Subiendo archivo Excel a Microsoft Drive...
+2026-01-14 12:14:17,898 - INFO - [MicrosoftAzureService] ✅ Archivo subido correctamente: informe_copias_14-01-2026.xlsx (ID: 01444MUTL7LD5TTPOO25CLXXEZEPQ56MPD)
+2026-01-14 12:14:18,120 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
+2026-01-14 12:17:51,423 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-14 12:20:52,914 - INFO - [CopyReportService] {
+    "success": true,
+    "results": [
+        {
+            "recipient": "573132875673",
+            "ok": true
+        }
+    ]
+}
+2026-01-14 12:20:52,914 - INFO - [CopyReportService] 📨 Enviado a 573132875673 → OK: True
+2026-01-14 12:20:52,914 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
+2026-01-14 12:25:01,923 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-14 12:28:03,680 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 07/01/2026 hasta 14/01/2026 (día actual: Wednesday)
+2026-01-14 12:25:44,326 - INFO - [CopyReportService] ✅ Se extrayeron 17812 informes de copias
+2026-01-14 12:25:45,068 - INFO - [ProcessDataService] 📊 XLSX generado correctamente → /app/output/reports/informe_copias_14-01-2026.xlsx
+2026-01-14 12:25:45,068 - INFO - [MicrosoftAzureService] 🚀 Conectando con Microsoft Azure...
+2026-01-14 12:25:45,837 - INFO - [MicrosoftAzureService] 🌐 Conectado con Microsoft Azure
+2026-01-14 12:25:45,837 - INFO - [MicrosoftAzureService] 🌐 Extrayendo información del Drive de Microsoft...
+2026-01-14 12:25:46,436 - INFO - [MicrosoftAzureService] ✅ Drive obtenido correctamente: b!BeBJQXeSykaNVrjviM8dPcREbuoEhzZIgIN8R7Zd4xgsifrnHy1jQ7r5ODIOXBQk
+2026-01-14 12:25:46,437 - INFO - [MicrosoftAzureService] ⬆️ Subiendo archivo Excel a Microsoft Drive...
+2026-01-14 12:25:48,216 - INFO - [MicrosoftAzureService] ✅ Archivo subido correctamente: informe_copias_14-01-2026.xlsx (ID: 01444MUTL7LD5TTPOO25CLXXEZEPQ56MPD)
+2026-01-14 12:25:48,216 - INFO - [MicrosoftAzureService] 🔗 Link del archivo: https://litigando-my.sharepoint.com/personal/samuel_monsalve_litigando_com/_layouts/15/Doc.aspx?sourcedoc=%7B39FB587F-CEBD-44D7-BBDC-9923E1DF31E3%7D&file=informe_copias_14-01-2026.xlsx&action=default&mobileredirect=true
+2026-01-14 12:25:55,640 - INFO - [CopyReportService] Status code:  200
+2026-01-14 12:25:55,640 - INFO - [CopyReportService] {
+    "success": true,
+    "results": [
+        {
+            "recipient": "573132875673",
+            "ok": true
+        }
+    ]
+}
+2026-01-14 12:25:55,640 - INFO - [CopyReportService] 📨 Enviado a 573132875673 → OK: True
+2026-01-14 12:25:55,738 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
+2026-01-14 12:28:57,650 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-14 12:28:58,211 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 07/01/2026 hasta 14/01/2026 (día actual: Wednesday)
+2026-01-14 12:29:31,506 - INFO - [CopyReportService] ✅ Se extrayeron 17812 informes de copias
+2026-01-14 12:29:32,200 - INFO - [ProcessDataService] 📊 XLSX generado correctamente → /app/output/reports/informe_copias_14-01-2026.xlsx
+2026-01-14 12:29:32,200 - INFO - [MicrosoftAzureService] 🚀 Conectando con Microsoft Azure...
+2026-01-14 12:29:32,794 - INFO - [MicrosoftAzureService] 🌐 Conectado con Microsoft Azure
+2026-01-14 12:29:32,794 - INFO - [MicrosoftAzureService] 🌐 Extrayendo información del Drive de Microsoft...
+2026-01-14 12:32:34,131 - INFO - [MicrosoftAzureService] ✅ Drive obtenido correctamente: b!BeBJQXeSykaNVrjviM8dPcREbuoEhzZIgIN8R7Zd4xgsifrnHy1jQ7r5ODIOXBQk
+2026-01-14 12:32:34,131 - INFO - [MicrosoftAzureService] ⬆️ Subiendo archivo Excel a Microsoft Drive...
+2026-01-14 12:29:34,983 - INFO - [MicrosoftAzureService] ✅ Archivo subido correctamente: informe_copias_14-01-2026.xlsx (ID: 01444MUTL7LD5TTPOO25CLXXEZEPQ56MPD)
+2026-01-14 12:29:34,984 - INFO - [MicrosoftAzureService] 🔗 Link del archivo: https://litigando-my.sharepoint.com/personal/samuel_monsalve_litigando_com/_layouts/15/Doc.aspx?sourcedoc=%7B39FB587F-CEBD-44D7-BBDC-9923E1DF31E3%7D&file=informe_copias_14-01-2026.xlsx&action=default&mobileredirect=true
+2026-01-14 12:29:42,475 - INFO - [CopyReportService] Status code:  200
+2026-01-14 12:29:42,475 - INFO - [CopyReportService] {
+    "success": true,
+    "results": [
+        {
+            "recipient": "120363204461146888@g.us",
+            "ok": true
+        }
+    ]
+}
+2026-01-14 12:29:42,476 - INFO - [CopyReportService] 📨 Enviado a 120363204461146888@g.us → OK: True
+2026-01-14 12:29:42,587 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
+2026-01-14 12:54:48,090 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-14 12:54:48,658 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 07/01/2026 hasta 14/01/2026 (día actual: Wednesday)
+2026-01-14 12:55:30,044 - INFO - [CopyReportService] ✅ Se extrayeron 18197 informes de copias
+2026-01-14 12:55:30,740 - INFO - [ProcessDataService] 📊 XLSX generado correctamente → /app/output/reports/informe_copias_14-01-2026.xlsx
+2026-01-14 12:55:30,740 - INFO - [MicrosoftAzureService] 🚀 Conectando con Microsoft Azure...
+2026-01-14 12:55:31,425 - INFO - [MicrosoftAzureService] 🌐 Conectado con Microsoft Azure
+2026-01-14 12:55:31,425 - INFO - [MicrosoftAzureService] 🌐 Extrayendo información del Drive de Microsoft...
+2026-01-14 12:55:31,982 - INFO - [MicrosoftAzureService] ✅ Drive obtenido correctamente: b!hVY7ts97W0W-LWNlJ5gpg1cdet7DktFJt7p6R1UzGGr91lA5y9VBR6V1Qdo2t_x4
+2026-01-14 12:55:31,983 - INFO - [MicrosoftAzureService] ⬆️ Subiendo archivo Excel a Microsoft Drive...
+2026-01-14 12:55:33,449 - ERROR - [MicrosoftAzureService] ❌ Error al subir el archivo Excel: 423 Client Error: Locked for url: https://graph.microsoft.com/v1.0/drives/b!hVY7ts97W0W-LWNlJ5gpg1cdet7DktFJt7p6R1UzGGr91lA5y9VBR6V1Qdo2t_x4/items/0175FYXVF6RK4V3RTFLNBYPM3WNXBIQY5I:/informe_copias_14-01-2026.xlsx:/content
+2026-01-14 12:55:33,449 - ERROR - [CopyReportService] ❌ Error : 423 Client Error: Locked for url: https://graph.microsoft.com/v1.0/drives/b!hVY7ts97W0W-LWNlJ5gpg1cdet7DktFJt7p6R1UzGGr91lA5y9VBR6V1Qdo2t_x4/items/0175FYXVF6RK4V3RTFLNBYPM3WNXBIQY5I:/informe_copias_14-01-2026.xlsx:/content
+2026-01-14 12:55:33,527 - ERROR - [main] ❌ Error durante la ejecución principal
+Traceback (most recent call last):
+  File "/home/app/main.py", line 50, in main
+    await copy_report.scrapper()
+  File "/home/app/app/application/services/scrapper/CopyReportService.py", line 91, in scrapper
+    raise e
+  File "/home/app/app/application/services/scrapper/CopyReportService.py", line 71, in scrapper
+    file_url= self.microsfotAzureService.upload_excel_to_drive(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/app/app/application/services/scrapper/MicrosoftAzureService.py", line 118, in upload_excel_to_drive
+    raise e
+  File "/home/app/app/application/services/scrapper/MicrosoftAzureService.py", line 103, in upload_excel_to_drive
+    resp.raise_for_status()
+  File "/usr/local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 423 Client Error: Locked for url: https://graph.microsoft.com/v1.0/drives/b!hVY7ts97W0W-LWNlJ5gpg1cdet7DktFJt7p6R1UzGGr91lA5y9VBR6V1Qdo2t_x4/items/0175FYXVF6RK4V3RTFLNBYPM3WNXBIQY5I:/informe_copias_14-01-2026.xlsx:/content
+2026-01-14 12:55:33,554 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
