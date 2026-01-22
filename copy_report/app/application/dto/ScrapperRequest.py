@@ -43,7 +43,7 @@ class ScrapperRequest(BaseModel):
     actuacion_fecha_carga: Optional[datetime] = None
     etapa_nombre: Optional[str] = None
     actuacion_nombre: Optional[str] = None
-    notifiacion_nombre: Optional[str] = None
+    notificacion_nombre: Optional[str] = None
     cliente_id: Optional[int] = None
     tipo_cliente: Optional[str] = None
     cliente_nombre: Optional[str] = None
@@ -62,13 +62,3 @@ class ScrapperRequest(BaseModel):
 
    
          
-
-
-    @classmethod
-    def fromRaw(cls, rawBody: str):
-        try:
-            data = json.loads(rawBody)
-            return cls(**data)
-        except (json.JSONDecodeError, ValidationError) as e:
-            raise ValueError(f"Invalid scrapper request data: {e}")
-

@@ -219,3 +219,7 @@ stack/keys/bd.pem
 
 **.dea
 
+output/img
+output/logs
+output/reports
+output/jsons

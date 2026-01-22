@@ -12,3 +12,38 @@
 2026-01-14 12:59:54,822 - INFO - [SendMessageService] Status code:  200
 2026-01-14 12:59:54,823 - INFO - [SendMessageService] 📨 Enviado a 120363204461146888@g.us → OK: True
 2026-01-14 12:59:54,920 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
+2026-01-22 11:24:55,828 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-22 11:24:56,407 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 15/01/2026 hasta 22/01/2026 (día actual: Thursday)
+2026-01-22 11:29:03,649 - INFO - [CopyReportService] ✅ Se extrayeron 89140 informes de copias
+2026-01-22 11:29:03,649 - ERROR - [CopyReportService] ❌ Error : 'ScrapperRequest' object has no attribute 'notifiacion_nombre'
+2026-01-22 11:29:03,730 - ERROR - [main] ❌ Error durante la ejecución principal
+Traceback (most recent call last):
+  File "/home/app/main.py", line 50, in main
+    await copy_report.scrapper()
+  File "/home/app/app/application/services/scrapper/CopyReportService.py", line 100, in scrapper
+    raise e
+  File "/home/app/app/application/services/scrapper/CopyReportService.py", line 51, in scrapper
+    self.processData.generate_copy_report_xlsx(
+  File "/home/app/app/application/services/scrapper/ProcessDataService.py", line 50, in generate_copy_report_xlsx
+    if item.notifiacion_nombre in self.TEXTOS_A_ELIMINAR:
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ScrapperRequest' object has no attribute 'notifiacion_nombre'. Did you mean: 'notificacion_nombre'?
+2026-01-22 11:29:03,895 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
+2026-01-22 11:39:08,902 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-22 11:39:09,895 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 15/01/2026 hasta 22/01/2026 (día actual: Thursday)
+2026-01-22 11:43:52,449 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-01-22 11:43:53,062 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 15/01/2026 hasta 22/01/2026 (día actual: Thursday)
+2026-01-22 11:47:00,238 - INFO - [CopyReportService] ✅ Se extrayeron 89238 informes de copias
+2026-01-22 11:47:00,984 - INFO - [ProcessDataService] 📊 XLSX generado correctamente → /app/output/reports/informe_copias_22-01-2026_prueba.xlsx
+2026-01-22 11:47:00,984 - INFO - [MicrosoftAzureService] 🚀 Conectando con Microsoft Azure...
+2026-01-22 11:47:01,733 - INFO - [MicrosoftAzureService] 🌐 Conectado con Microsoft Azure
+2026-01-22 11:47:01,733 - INFO - [MicrosoftAzureService] 🌐 Extrayendo información del Drive de Microsoft...
+2026-01-22 11:47:02,241 - INFO - [MicrosoftAzureService] ✅ Drive obtenido correctamente: b!BeBJQXeSykaNVrjviM8dPcREbuoEhzZIgIN8R7Zd4xgsifrnHy1jQ7r5ODIOXBQk
+2026-01-22 11:47:02,242 - INFO - [MicrosoftAzureService] ⬆️ Subiendo archivo Excel a Microsoft Drive...
+2026-01-22 11:47:03,719 - INFO - [MicrosoftAzureService] ✅ Archivo subido correctamente: informe_copias_22-01-2026_prueba.xlsx (ID: 01444MUTKIBDAYGZN2FNGKT2GJ6Q2AUQOF)
+2026-01-22 11:47:03,719 - INFO - [MicrosoftAzureService] 🔗 Link del archivo: https://litigando-my.sharepoint.com/personal/samuel_monsalve_litigando_com/_layouts/15/Doc.aspx?sourcedoc=%7B83C10848-BA65-4C2B-A9E8-C9F4340A41C5%7D&file=informe_copias_22-01-2026_prueba.xlsx&action=default&mobileredirect=true
+2026-01-22 11:47:05,839 - INFO - [SendMessageService] 📨 Enviado a 120363405778286376@g.us → OK: True
+2026-01-22 11:47:05,840 - INFO - [CopyReportService] 🗑️ Archivo local eliminado: /app/output/reports/informe_copias_22-01-2026_prueba.xlsx
+2026-01-22 11:47:06,026 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.

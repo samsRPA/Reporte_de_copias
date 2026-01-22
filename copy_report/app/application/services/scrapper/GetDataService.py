@@ -91,7 +91,7 @@ class GetDataService(IGetDataService):
                     actuacion_fecha_carga=row[37],
                     etapa_nombre=self._upper(row[38]),
                     actuacion_nombre=self._upper(row[39]),
-                    notifiacion_nombre=self._upper(row[40]),
+                    notificacion_nombre=self._upper(row[40]),
                     cliente_id=row[41],
                     tipo_cliente=row[42],
                     cliente_nombre=self._upper(row[43]),

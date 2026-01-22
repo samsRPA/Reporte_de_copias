@@ -47,8 +47,7 @@ class SendMessageService(ISendMessageService):
                 timeout=10
             )
 
-            # Ver status HTTP
-            self.logger.info(f"Status code:  {response.status_code}" )
+
 
             # Respuesta JSON
             data = response.json()

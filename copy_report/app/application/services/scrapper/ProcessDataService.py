@@ -47,7 +47,7 @@ class ProcessDataService:
             if item.origen == "OPERAC":
                 continue
 
-            if item.notifiacion_nombre in self.TEXTOS_A_ELIMINAR:
+            if item.notificacion_nombre in self.TEXTOS_A_ELIMINAR:
                 continue
 
             if item.actuacion_procesal_id in vistos:
@@ -135,7 +135,7 @@ class ProcessDataService:
                 item.radicacion,
                 item.proceso_id,
                 item.actuacion_procesal_id,
-                item.notifiacion_nombre,
+                item.notificacion_nombre,
                 item.resuelve,
                 item.copias,
                 item.gestion_copia,

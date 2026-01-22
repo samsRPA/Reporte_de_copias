@@ -1,0 +1,7 @@
+requests==2.32.3
+httpx
+dependency-injector==4.45.0
+pydantic-settings==2.6.1
+oracledb==2.5.1
+matplotlib==3.8.2
+pandas

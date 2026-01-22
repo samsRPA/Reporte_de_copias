@@ -5,6 +5,7 @@ from app.domain.interfaces.IDataBase import IDataBase
 
 
 class OracleDB(IDataBase):
+    
     def __init__(self, db_user: str, db_password: str, db_host: str, db_port: int, db_service_name: str):
         self._db_user = db_user
         self._password = db_password
