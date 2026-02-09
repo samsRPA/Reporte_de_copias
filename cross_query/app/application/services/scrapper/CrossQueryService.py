@@ -37,17 +37,14 @@ class CrossQueryService(ICrossQueryService):
             self.logger.info("🖼️ [IMAGE] Generando imagen de la tabla")
             self.logger.info("📤 [MESSAGE] Enviando mensaje con imagen adjunta")
             image_path, image_b64 = self.processData.generate_table_image(processed_data)
-
-       
     
             message = (
-                "👋 Hola, \n\n"
-                "📄 La imagen de la consulta del cruce ha sido generado.\n\n"
-
-                "¡Saludos!"
-            )
+               
+                "Comparto avance del cruce"
 
             
+            )
+
             self.send_message_service.send_message(message,image_b64)
 
 

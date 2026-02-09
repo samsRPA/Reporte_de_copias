@@ -41,7 +41,7 @@ class CopyReportService(ICopyReportService):
             if 4 <= hora <= 7:
                 file_name = f"informe_copias_{fecha}_MAÑANA.xlsx"
             else:
-                file_name = f"informe_copias_{fecha}_prueba.xlsx"
+                file_name = f"informe_copias_{fecha}.xlsx"
 
             output_path = f"/app/output/reports/{file_name}"
 
@@ -80,7 +80,9 @@ class CopyReportService(ICopyReportService):
                 "👋 Hola, \n\n"
                 "📄 El *informe de copias* ha sido generado y cargado correctamente.\n\n"
                 "🔗 Puedes consultarlo en el siguiente enlace:\n"
-                f"{file_url}\n\n"
+                f" https://litigando-my.sharepoint.com/:f:/p/lilian_trivino/IgC-irldxmVbQ4ezdm3CiGOoAf927ME3S-aFV-89IBEtZWQ?e=OAWiJn\n\n"
+                "El informe está disponible con el nombre:\n "
+                f"{file_name}\n"
                 "¡Saludos!"
             )
             

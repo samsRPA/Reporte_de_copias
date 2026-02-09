@@ -75,7 +75,7 @@ class MonitoringReportService(IMonitoringReportService):
 
             message = (
                 "👋 Hola, \n\n"
-                "📄 El informe de la doctora ha sido generado y cargado correctamente.\n\n"
+                "📄 El informe de seguimiento notificaciones diarias ha sido generado y cargado correctamente.\n\n"
                 "🔗 Puedes consultarlo en el siguiente enlace:\n"
                 f"Excel 📊: {excel_url_drive}\n\n"
                 f"Captura 🖼️ : {img_url_drive}\n\n"

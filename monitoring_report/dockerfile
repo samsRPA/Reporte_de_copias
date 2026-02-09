@@ -28,4 +28,5 @@ COPY . /home/app
 
 # 🔹 Comando por defecto
 #CMD ["python", "main.py"]
-CMD ["python", "main.py"]
+#CMD ["python", "main.py"]
+CMD ["tail", "-f", "/dev/null"]

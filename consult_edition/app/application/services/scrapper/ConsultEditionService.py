@@ -36,9 +36,9 @@ class ConsultEditionService(IConsultEditionService):
             image_path,image_base64= self.processData.generate_table_image(edition_data )
     
             message = (
-                "👋 Hola, \n\n"
-                "🖼️ La imagen de la consulta de edicion ha sido generada.\n\n"
-                "¡Saludos!"
+                
+                " Comparto avance de plantillas a la hora"
+                
             )
 
             self.logger.info("📤 Enviando mensaje con imagen adjunta")

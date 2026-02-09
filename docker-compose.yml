@@ -56,82 +56,82 @@ services:
           memory: 2000m
 
 
-  # monitoring_report:
-  #   build:
-  #     context: ./monitoring_report
-  #     dockerfile: dockerfile
-  #   #container_name: scrapper_tyba
-  #   depends_on:
-  #     ssh_tunnel_copy_rep:
-  #       condition: service_healthy
+  monitoring_report:
+    build:
+      context: ./monitoring_report
+      dockerfile: dockerfile
+    #container_name: scrapper_tyba
+    depends_on:
+      ssh_tunnel_copy_rep:
+        condition: service_healthy
     
-  #   networks:
-  #     - rabbitmq_net
-  #   volumes:
-  #     - ./output:/app/output
-  #   logging:
-  #     driver: "json-file"
-  #     options:
-  #       max-size: "20m"
-  #       max-file: "5"
-  #   deploy:
-  #     replicas: 1
-  #     resources:
-  #       limits:
-  #         memory: 2000m
+    networks:
+      - rabbitmq_net
+    volumes:
+      - ./output:/app/output
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2000m
   
 
 
  
 
-  # consult_edition:
-  #   build:
-  #     context: ./consult_edition
-  #     dockerfile: dockerfile
-  #   #container_name: scrapper_tyba
-  #   depends_on:
-  #     ssh_tunnel_copy_rep:
-  #       condition: service_healthy
+  consult_edition:
+    build:
+      context: ./consult_edition
+      dockerfile: dockerfile
+    #container_name: scrapper_tyba
+    depends_on:
+      ssh_tunnel_copy_rep:
+        condition: service_healthy
     
-  #   networks:
-  #     - rabbitmq_net
-  #   volumes:
-  #     - ./output:/app/output
-  #   logging:
-  #     driver: "json-file"
-  #     options:
-  #       max-size: "20m"
-  #       max-file: "5"
-  #   deploy:
-  #     replicas: 1
-  #     resources:
-  #       limits:
-  #         memory: 100m
+    networks:
+      - rabbitmq_net
+    volumes:
+      - ./output:/app/output
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 100m
 
 
-  # cross_query:
-  #   build:
-  #     context: ./cross_query
-  #     dockerfile: dockerfile
-  #   #container_name: scrapper_tyba
-  #   depends_on:
-  #     ssh_tunnel_copy_rep:
-  #       condition: service_healthy
+  cross_query:
+    build:
+      context: ./cross_query
+      dockerfile: dockerfile
+    #container_name: scrapper_tyba
+    depends_on:
+      ssh_tunnel_copy_rep:
+        condition: service_healthy
     
-  #   networks:
-  #     - rabbitmq_net
-  #   volumes:
-  #     - ./output:/app/output
-  #   logging:
-  #     driver: "json-file"
-  #     options:
-  #       max-size: "20m"
-  #       max-file: "5"
-  #   deploy:
-  #     replicas: 1
-  #     resources:
-  #       limits:
-  #         memory: 100m
+    networks:
+      - rabbitmq_net
+    volumes:
+      - ./output:/app/output
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 100m
   
 
 networks:
