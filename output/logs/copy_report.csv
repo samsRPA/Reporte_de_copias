@@ -47,3 +47,5 @@ AttributeError: 'ScrapperRequest' object has no attribute 'notifiacion_nombre'. 
 2026-01-22 11:47:05,839 - INFO - [SendMessageService] 📨 Enviado a 120363405778286376@g.us → OK: True
 2026-01-22 11:47:05,840 - INFO - [CopyReportService] 🗑️ Archivo local eliminado: /app/output/reports/informe_copias_22-01-2026_prueba.xlsx
 2026-01-22 11:47:06,026 - INFO - [OracleDB] 🔌 Conexión a Oracle cerrada correctamente.
+2026-02-09 11:19:43,647 - INFO - [OracleDB] ✅ Pool de Oracle creado exitosamente.
+2026-02-09 11:19:44,305 - INFO - [GetDataService] [CopyReport] 📅 Fecha a tomar → desde 02/02/2026 hasta 09/02/2026 (día actual: Monday)
